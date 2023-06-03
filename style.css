@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+
+body {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    margin-left: 33%;
+    align-items: center;
+}
+
+.clock {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    font-weight: bold;
+}
+
+.dev {
+    font-size: 10rem;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 9;
+    animation: bouncingText 2s infinite;
+}
+
+@keyframes bouncingText {
+    0% {
+        transform: translateY(0);
+        color: red;
+    }
+    50% {
+        transform: translateY(-20px);
+        color: blue;
+    }
+    100% {
+        transform: translateY(0);
+        color: green;
+    }
+}
